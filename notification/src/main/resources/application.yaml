@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: notification
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/eureka-db
+      username: root
+      password: password
+      database: eureka-db
+
+logging:
+  level:
+    org:
+      mongodb:
+        driver: DEBUG
+
+server:
+  port: 8082
