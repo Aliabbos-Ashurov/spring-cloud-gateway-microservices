@@ -17,10 +17,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder(toBuilder = true)
-@Document(collation = "notifications")
+@Document(collection = "notifications")
 public class Notification {
     @Id
-    private Long id;
+    private String id;
     private String message;
     private Long userId;
 }
