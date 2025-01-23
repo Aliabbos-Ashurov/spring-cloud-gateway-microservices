@@ -3,6 +3,8 @@
 The goal of this project is to implement an API gateway in a microservices project. This repository serves as a basic
 example of a gateway with YAML file configurations.
 
+![Description of the image](img/diagram.png)
+
 ## Features
 
 ### 1. API Gateway
@@ -19,8 +21,6 @@ example of a gateway with YAML file configurations.
 
 - Centralized configuration management for microservices.
 - Allows dynamic configuration updates.
-
-![Description of the image](img/diagram.png)
 
 ### 4. User Service
 
