@@ -9,12 +9,6 @@ spring:
     discovery:
       enabled: true
 
-logging:
-  level:
-    org:
-      mongodb:
-        driver: DEBUG
-
 eureka:
   client:
     register-with-eureka: true
