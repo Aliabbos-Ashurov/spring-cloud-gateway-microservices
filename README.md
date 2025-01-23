@@ -1,42 +1,44 @@
-# Microservices Architecture for User and Notification Management
+# Spring Cloud Gateway Microservices
 
-This repository contains a microservices-based project that demonstrates the implementation of a **User Service** and a
-**Notification Service** using **Spring Boot**, **Eureka Discovery Server**, and **MongoDB/PostgreSQL**. The system
-leverages **Feign Clients** for inter-service communication and integrates with **Eureka Server** for service
-registration and discovery.
+The goal of this project is to implement an API gateway in a microservices project. This repository serves as a basic example of a gateway with YAML file configurations.
 
 ## Features
 
-### 1. User Service
+### 1. API Gateway
+- Implements a gateway for routing requests to various microservices.
+- Configurable via YAML files for flexible routing and filtering.
 
-- Handles user management operations.
-- Supports user creation, retrieval, and persistence in a **PostgreSQL** database.
-- Communicates with the Notification Service to send user-specific notifications.
-
-### 2. Notification Service
-
-- Manages notifications for users.
-- Stores notification data in a **MongoDB** collection.
-- Provides APIs for saving and retrieving notifications.
-
-### 3. Eureka Discovery Server
-
-- Centralized service registry for dynamic service discovery.
+### 2. Eureka Discovery Server
+- Centralized service registry for dynamic service registration and discovery.
 - Enables load balancing and fault tolerance.
 
-### 4. Inter-Service Communication
+### 3. Spring Cloud Config
+- Centralized configuration management for microservices.
+- Allows dynamic configuration updates.
 
-- Uses **Spring Cloud OpenFeign** for declarative REST client communication.
+### 4. User Service
+- Manages user-related operations.
+- Supports user creation, retrieval, and storage in a PostgreSQL database.
+- Communicates with other services through the gateway.
+
+### 5. Notification Service
+- Handles notifications for users.
+- Stores notification data in a MongoDB collection.
+- Provides APIs for saving and retrieving notifications.
+
+### 6. Inter-Service Communication
+- Utilizes Spring Cloud OpenFeign for declarative REST client communication.
 - Supports service discovery and load balancing through Eureka.
 
-### 5. Database Configuration
-
-- User Service: **PostgreSQL** with Hibernate for ORM.
-- Notification Service: **MongoDB** with Spring Data MongoDB for NoSQL database operations.
+### 7. Database Configuration
+- **User Service**: Uses PostgreSQL with Hibernate for ORM.
+- **Notification Service**: Uses MongoDB with Spring Data MongoDB for NoSQL database operations.
 
 ## Technologies Used
-
-- **Spring Boot** for microservices.
-- **Spring Cloud** for service discovery and Feign integration.
+- **Spring Boot** for building microservices.
+- **Spring Cloud** for service discovery, configuration, and Feign integration.
 - **MongoDB** and **PostgreSQL** as databases.
 - **Docker** for containerization.
+
+## Getting Started
+To get started with this project, clone the repository and follow the instructions in the respective service directories to set up and run the services.
