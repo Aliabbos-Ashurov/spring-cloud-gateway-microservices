@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configurations
+        git:
+          uri: https://github.com/Aliabbos-Ashurov/spring-cloud-eureka-microservices.git
+server:
+  port: 8888
