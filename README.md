@@ -47,7 +47,7 @@ example of a gateway with YAML file configurations.
 ## Technologies Used
 
 - **Spring Boot** for building microservices.
-- **Spring Cloud** for service discovery, configuration, and Feign integration.
+- **Spring Cloud** for service discovery, configuration, gateway and Feign integration.
 - **MongoDB** and **PostgreSQL** as databases.
 - **Docker** for containerization.
 
