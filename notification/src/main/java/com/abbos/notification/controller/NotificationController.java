@@ -28,4 +28,7 @@ public class NotificationController {
     public ResponseEntity<List<NotificationResponseDTO>> getAll() {
         return ResponseEntity.ok(notificationService.findAll());
     }
+    void hello() {
+
+    }
 }
